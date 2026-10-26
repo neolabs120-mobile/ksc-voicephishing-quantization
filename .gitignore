@@ -1,0 +1,22 @@
+# Public source and aggregate results only; experiment inputs and weights stay local.
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv*/
+.pytest_cache/
+build/
+third_party/
+work/
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.onnx
+*.ckpt
+*.jsonl
+*.log
+.env
+.env.*
+credentials*
+*token*.txt

@@ -1,0 +1,13 @@
+model,file_mb_rounded,split,n,macro_f1_percent_rounded,source_id
+original_hcx_bf16,1132.59,test,712,31.3,final_paper
+original_hcx_bf16,1132.59,challenge,1357,36.14,final_paper
+ecog_hcx_f32,2265.16,test,712,99.86,final_paper
+ecog_hcx_f32,2265.16,challenge,1357,98.01,final_paper
+original_gemma_f32,1078.92,test,712,35.68,final_paper
+original_gemma_f32,1078.92,challenge,1361,33.18,final_paper
+distilled_gemma_f32,1078.92,test,712,99.0,final_paper
+distilled_gemma_f32,1078.92,challenge,1361,95.59,final_paper
+distilled_gemma_Q8_0_E8,291.55,test,712,99.15,final_paper
+distilled_gemma_Q8_0_E8,291.55,challenge,1361,95.81,final_paper
+distilled_gemma_Q4_0_E8,241.41,test,712,94.64,final_paper
+distilled_gemma_Q4_0_E8,241.41,challenge,1361,89.21,final_paper

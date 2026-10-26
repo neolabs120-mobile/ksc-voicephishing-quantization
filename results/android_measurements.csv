@@ -1,0 +1,3 @@
+model,n,positive_count,negative_count,repetitions_per_sample_per_measurement_mode,file_mb_rounded,decision_median_ms,decision_p90_ms,app_pss_observed_max_mib,macro_f1_percent_rounded,recall_percent,false_positive_rate_percent_rounded,tp,fn,tn,fp,source_id,evidence_level
+ecog_hcx_Q3_K_E8,36,18,18,1,319.23,8521.1,21904.2,1537.2,97.22,100.0,5.56,18,0,17,1,final_paper,paper_reported
+distilled_gemma_B03_B05_B11_Q8_E8,36,18,18,1,249.77,799.7,2168.7,995.0,97.22,100.0,5.56,18,0,17,1,final_paper,paper_reported

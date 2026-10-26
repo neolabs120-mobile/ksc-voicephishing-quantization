@@ -1,0 +1,199 @@
+{
+  "description": "Sanitized derived aggregates for the KSC paper; private source artifacts and model outputs are not redistributed.",
+  "sources": {
+    "cumulative": {
+      "workspace_relative_path": "decoder_distillation/reference/final_gguf/results.json",
+      "sha256": "593930f704372bde37487028acb3412d7c366ce121b60953d0ec48cf932e348d",
+      "bytes": 14414,
+      "redistributed": false
+    },
+    "final_layout": {
+      "workspace_relative_path": "decoder_distillation/reference/final_gguf/model.json",
+      "sha256": "72995a4d4905dfbf297979b23349eedc2821055b1fe635965bffe3750f16019e",
+      "bytes": 9841,
+      "redistributed": false
+    },
+    "uniform": {
+      "workspace_relative_path": "decoder_distillation/reproduction/gguf_uniform_20261008/results.json",
+      "sha256": "b3dd5d7079a21c8411316eff0ac045e8173b715aebbe6426d8fa6f6bd95eebf5",
+      "bytes": 2513,
+      "redistributed": false
+    },
+    "gemma_f32": {
+      "workspace_relative_path": "decoder_distillation/reproduction/gemma_original_f32_20261008/results.json",
+      "sha256": "0334bdabe916bcb0fe4a40919a02165e6f704d18453edeae58537d5d913b7894",
+      "bytes": 21651,
+      "redistributed": false
+    },
+    "single_block": {
+      "workspace_relative_path": "decoder_distillation/reproduction/gguf_block_sweep/validation.json",
+      "sha256": "63feacd2ec8639c7c123fe55d2ffb7401d18113f1d26eb34524bac0d71b511e8",
+      "bytes": 4399,
+      "redistributed": false
+    },
+    "final_paper": {
+      "workspace_relative_path": "논문_검토자료/20261021_교사모델명_각주정리_3쪽.pdf",
+      "sha256": "87eaa32b2bed447a9c35c923190de970df4c9657fe4133f5788f7e6d2284749c",
+      "bytes": 210086,
+      "redistributed": false
+    },
+    "original_hcx_bf16_test": {
+      "workspace_relative_path": "decoder_distillation/ecog_local/outputs/HCX_ORIGINAL_EVAL/test.label_choice.metrics.json",
+      "sha256": "50ba0b4ac2733fd2e987b7f746d7a1b9c184d257d637df9817560527233474c1",
+      "bytes": 574,
+      "redistributed": false
+    },
+    "original_hcx_bf16_challenge": {
+      "workspace_relative_path": "decoder_distillation/ecog_local/outputs/HCX_ORIGINAL_EVAL/challenge.label_choice.metrics.json",
+      "sha256": "85f06231701b29a4f84aa992152f774c486bed0af3b856de2e877de80a318f8d",
+      "bytes": 617,
+      "redistributed": false
+    },
+    "ecog_hcx_f32_test": {
+      "workspace_relative_path": "decoder_distillation/ecog_local/outputs/HCX_ECOG_EVAL/test.label_choice.metrics.json",
+      "sha256": "d235104bb1fc6c1c2569ceb8322787c657cca0a056c3145d701e0d67a5d75f38",
+      "bytes": 563,
+      "redistributed": false
+    },
+    "ecog_hcx_f32_challenge": {
+      "workspace_relative_path": "decoder_distillation/ecog_local/outputs/HCX_ECOG_EVAL/challenge.label_choice.metrics.json",
+      "sha256": "b8a4829e07970e8e932a9d10ed71de02bc07f824e303d43a5c5b062d9d757308",
+      "bytes": 611,
+      "redistributed": false
+    },
+    "teacher_quantization_log": {
+      "workspace_relative_path": "decoder_distillation/reproduction/android_benchmark_app_20261007/teacher-quantization.log",
+      "sha256": "812cc056d5f1d1948c8263ac0b1c397dde042f4ef067c576a21addb78a372628",
+      "bytes": 36801,
+      "redistributed": false
+    },
+    "teacher_conversion": {
+      "workspace_relative_path": "decoder_distillation/reproduction/android_benchmark_app_20261007/conversion-provenance.json",
+      "sha256": "c8f7d76ed8b75265f28849e17e4a688229194cceacebbc3797dd894beff9d68c",
+      "bytes": 688,
+      "redistributed": false
+    },
+    "android_subset_selection": {
+      "workspace_relative_path": "decoder_distillation/reproduction/android_benchmark_app_20261007/dataset-selection.json",
+      "sha256": "943a35dd9e9cf8bd59974d3c75024de71e1e5a8068cfc636edc9af6a48a979a2",
+      "bytes": 1206,
+      "redistributed": false
+    },
+    "teacher_model_sizes": {
+      "workspace_relative_path": "decoder_distillation/ecog_local/outputs/HCX_ECOG_EVAL/model_sizes.json",
+      "sha256": "500c0b1609e82a44fb8d537a1e10bdc59c720ea8ead2399418a915ed6625c1f0",
+      "bytes": 514,
+      "redistributed": false
+    },
+    "android_model_manifest": {
+      "workspace_relative_path": "decoder_distillation/reproduction/android_benchmark_app_20261007/project/app/src/main/assets/models.json",
+      "sha256": "59fde24448d7291e57aae948ffb6e4cf318f73d6ce1f33aafb88ebd04997ce7f",
+      "bytes": 1150,
+      "redistributed": false
+    }
+  },
+  "units": {
+    "desktop_metrics": "fractions in [0,1]",
+    "paper_table1": "Macro-F1 in percent, rounded exactly as the paper",
+    "file_mb": "decimal MB = bytes / 1000000",
+    "app_pss_observed_max_mib": "binary MiB = bytes / 1048576",
+    "decision_time": "milliseconds",
+    "native_invalid_first_token_count": "highest-logit vocabulary token was neither 0 nor 1; classification then used the greater 0/1 logit, so this is not a missing prediction count"
+  },
+  "evaluation": {
+    "desktop": {
+      "runtime": "llama.cpp b9010",
+      "hardware": "Mac M4 Pro",
+      "gpu": "Metal offload",
+      "cpu_threads": 4,
+      "context": 32768,
+      "batch": 512,
+      "kv_cache": "F32",
+      "decision": "Use native vocabulary argmax when 0/1, otherwise compare 0/1 logits at the first response position; no explanation generation in these detection metrics."
+    },
+    "hcx_baselines": {
+      "runtime": "Transformers F32 regardless of checkpoint storage precision",
+      "challenge_excluded_for_context_limit": 4,
+      "challenge_evaluated_n": 1357,
+      "selection_note": "teacher_baselines.csv uses evaluated-only counts and ecog_valid_only Macro-F1; four over-context Challenge cases are excluded, yielding n=1357 (667 phishing,690 normal). Native generated-response-format metrics are not mixed with the 0/1 logit rule.",
+      "file_size_source_id": "teacher_model_sizes"
+    },
+    "android": {
+      "evidence_level": "paper_reported",
+      "device_as_reported": "SM-F971N",
+      "android_version_as_reported": "17",
+      "runtime": "llama.cpp CPU",
+      "cpu_threads": 8,
+      "context": 8192,
+      "kv_cache": "F16",
+      "batch": 512,
+      "warmup_runs_excluded": 2,
+      "sampling": "Challenge finance/government x normal/phishing x three length strata, three samples per stratum; total 36",
+      "decision_timing_includes": [
+        "tokenization",
+        "prompt processing",
+        "0/1 logit comparison"
+      ],
+      "decision_timing_excludes": [
+        "model loading",
+        "explanation generation"
+      ],
+      "memory_measurement": "Maximum app-wide PSS observed before/after decisions and at one-second intervals; not model weights alone. Speed and memory measured in separate runs.",
+      "raw_mobile_export_available_for_this_release": false,
+      "selection_source_id": "android_subset_selection",
+      "sampling_seed": 42,
+      "eligible_n": 1354,
+      "excluded_overflow_8192_count": 7,
+      "pooled_length_cut_tokens": [
+        543,
+        863
+      ],
+      "llama_cpp_commit": "5f55650a78f92aff4d48d671423e888fac0469ff"
+    }
+  },
+  "selection": {
+    "single_block_validation_n": 692,
+    "training_overlaps_removed_from_validation": 24,
+    "ranking": "Recall descending, Macro-F1 descending, FPR ascending, block index ascending",
+    "block_order": [
+      11,
+      3,
+      5,
+      10,
+      6,
+      0,
+      14,
+      17,
+      13,
+      15,
+      1,
+      8,
+      16,
+      12,
+      4,
+      2,
+      7,
+      9
+    ],
+    "cumulative_candidate_count": 17,
+    "selected_blocks": [
+      3,
+      5,
+      11
+    ],
+    "criterion": "Highest observed Challenge Recall among the evaluated cumulative candidates with observed Challenge FPR <= 0.05"
+  },
+  "limitations": [
+    "Test and Challenge were reused for candidate selection; they are not independent final holdouts.",
+    "Train/Test overlap includes 10 items; Train/Challenge has no exact normalized overlap as reported in the paper.",
+    "Wilson intervals are descriptive and do not correct candidate-selection bias.",
+    "Android results are paper-reported rounded aggregates from one device and one pass per model per measurement mode; this release contains no raw mobile ZIP.",
+    "Full-call offline detection metrics exclude ASR, explanation generation and warning delivery latency.",
+    "Original instruct models perform poorly under this task-specific prompt and label rule; these are not general-model capability estimates.",
+    "The final filtered distillation-training count and every training hyperparameter are not fully recoverable from the archived records; training is outside this release.",
+    "GPTQ exploratory runs are excluded; all final student quantization results here use llama.cpp GGUF Q4_0/Q8_0.",
+    "The student Q3_K experiment was excluded because 90 of 126 linear matrices fell back to Q4_0.",
+    "Teacher/student device comparisons differ in architecture, tokenization, quantization and file size; differences cannot be attributed to distillation alone."
+  ],
+  "privacy_filter": "Only whitelisted aggregate numeric metrics and tensor-layout metadata were exported. No transcripts, per-example identifiers, per-example prompts, generated responses, token IDs, credentials, server addresses or absolute personal filesystem paths are included."
+}

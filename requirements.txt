@@ -1,0 +1,5 @@
+# 연구의 GGUF 변환·토크나이저 기준 환경. gguf는 고정 llama.cpp checkout의 gguf-py를 별도 설치한다.
+torch==2.8.0
+transformers==5.17.0
+safetensors==0.8.0
+sentencepiece==0.2.2

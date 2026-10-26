@@ -1,0 +1,5 @@
+model,checkpoint_file_bytes,checkpoint_file_mb,split,source_n,evaluated_n,excluded_context_limit_count,positive_count,negative_count,macro_f1,recall,false_positive_rate,tp,fn,tn,fp,source_id,file_size_source_id
+original_hcx_bf16,1132587360,1132.58736,test,712,712,0,396,316,0.31301732835718554,0.005050505050505051,0.0,2,394,316,0,original_hcx_bf16_test,teacher_model_sizes
+original_hcx_bf16,1132587360,1132.58736,challenge,1361,1357,4,667,690,0.36136045363759495,0.0239880059970015,0.007246376811594203,16,651,685,5,original_hcx_bf16_challenge,teacher_model_sizes
+ecog_hcx_f32,2265158224,2265.158224,test,712,712,0,396,316,0.998577089949099,1.0,0.0031645569620253164,396,0,315,1,ecog_hcx_f32_test,teacher_model_sizes
+ecog_hcx_f32,2265158224,2265.158224,challenge,1361,1357,4,667,690,0.9801031255345667,0.9955022488755623,0.034782608695652174,664,3,666,24,ecog_hcx_f32_challenge,teacher_model_sizes

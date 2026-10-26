@@ -1,0 +1,95 @@
+{
+  "description": "Research-source copies are distinguished from new public execution glue. Existing experiment records are not rewritten.",
+  "research_source": [
+    {
+      "source": "decoder_distillation/scripts/prepare_mobile_gguf.py",
+      "target": "scripts/prepare_mobile_gguf.py",
+      "source_sha256": "fee9fe1311b93c888ab45425631875a2f6f466ab76a7b4abfcd2e513eb870f81",
+      "target_sha256": "a55b79ccae6373ce7a1e73f59136faa5c6225ea6557a3e77b59830141365886f",
+      "identical": false,
+      "adaptation": "Lazy gguf import for dependency-free --help"
+    },
+    {
+      "source": "decoder_distillation/scripts/evaluate_mobile_gguf.py",
+      "target": "scripts/evaluate_mobile_gguf.py",
+      "source_sha256": "e9fa4b9c1cf9da6477c53201fcf724ebd1a015130bebd8c4dc1b621a54cfbe4e",
+      "target_sha256": "e9fa4b9c1cf9da6477c53201fcf724ebd1a015130bebd8c4dc1b621a54cfbe4e",
+      "identical": true,
+      "adaptation": null
+    },
+    {
+      "source": "decoder_distillation/scripts/gguf_eval.cpp",
+      "target": "scripts/gguf_eval.cpp",
+      "source_sha256": "e621bad281af10a94bb860a9b9a3aca89932796ddfbb4bf16f46e4c291f7409b",
+      "target_sha256": "e621bad281af10a94bb860a9b9a3aca89932796ddfbb4bf16f46e4c291f7409b",
+      "identical": true,
+      "adaptation": null
+    },
+    {
+      "source": "decoder_distillation/scripts/common/__init__.py",
+      "target": "scripts/common/__init__.py",
+      "source_sha256": "51ecc4eab24cf6d13709528565974b8b56c5fc0cc76d67947b3e53d8552cddfe",
+      "target_sha256": "51ecc4eab24cf6d13709528565974b8b56c5fc0cc76d67947b3e53d8552cddfe",
+      "identical": true,
+      "adaptation": null
+    },
+    {
+      "source": "decoder_distillation/scripts/common/dataset_io.py",
+      "target": "scripts/common/dataset_io.py",
+      "source_sha256": "5d5327b16532aef4638150ef3df84c5b633a053a234944f6fe2d8a514e0b1ed0",
+      "target_sha256": "5d5327b16532aef4638150ef3df84c5b633a053a234944f6fe2d8a514e0b1ed0",
+      "identical": true,
+      "adaptation": null
+    },
+    {
+      "source": "decoder_distillation/scripts/common/evaluation_metrics.py",
+      "target": "scripts/common/evaluation_metrics.py",
+      "source_sha256": "0b1da38b424c7c2a4afa9fd2fa3a9d20eeb22c4e884b517b850761fb2da3f3df",
+      "target_sha256": "0b1da38b424c7c2a4afa9fd2fa3a9d20eeb22c4e884b517b850761fb2da3f3df",
+      "identical": true,
+      "adaptation": null
+    },
+    {
+      "source": "decoder_distillation/scripts/common/student_format.py",
+      "target": "scripts/common/student_format.py",
+      "source_sha256": "8966482f4a618313becba61f1d3574379858a1f921a3d4a0fae4b6a1bd5a3ab1",
+      "target_sha256": "8966482f4a618313becba61f1d3574379858a1f921a3d4a0fae4b6a1bd5a3ab1",
+      "identical": true,
+      "adaptation": null
+    },
+    {
+      "source": "decoder_distillation/ecog_local/outputs/STUDENT_RELAXED/final/student_system_prompt.txt",
+      "target": "prompts/student_system_prompt.txt",
+      "source_sha256": "079558e8ff07c839cf792d40bd86c7c27db52dfd7cbd3adcea8e9fbc7883d785",
+      "target_sha256": "079558e8ff07c839cf792d40bd86c7c27db52dfd7cbd3adcea8e9fbc7883d785",
+      "identical": true,
+      "adaptation": null
+    }
+  ],
+  "public_glue": [
+    {
+      "target": "scripts/public_pipeline.py",
+      "sha256": "fa3e9a2a75f591ffd5d5267d86a43c8358cc49ca9b027496e406a2eead1e4e7e"
+    },
+    {
+      "target": "CMakeLists.txt",
+      "sha256": "318271c24aa845b8372bec10c00b1533789e3ef601e10238453aba88ec1b6af4"
+    },
+    {
+      "target": "tests/test_pipeline.py",
+      "sha256": "12148c8856efb95299586d95e0c5ef72c03179dee25d6080149a073bbb9f196d"
+    }
+  ],
+  "external_runtime": {
+    "llama_cpp_tag": "b9010",
+    "llama_cpp_commit": "d05fe1d7dadbf8943c8f1903fcf65b935ddab839"
+  },
+  "results_provenance": "results/provenance.json",
+  "publication_checks": {
+    "python_version": "3.13.5",
+    "isolated_dependency_install": true,
+    "unit_tests_passed": 12,
+    "llama_quantize_and_gguf_eval_cpu_build": true,
+    "full_experiments_rerun_for_this_publication": false
+  }
+}

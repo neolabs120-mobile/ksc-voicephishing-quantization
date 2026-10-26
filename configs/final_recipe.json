@@ -1,0 +1,13 @@
+{
+  "name": "Gemma_Q8_B03_B05_B11_E8",
+  "q8_blocks": [3, 5, 11],
+  "block_numbering": "zero_based",
+  "other_linear": "Q4_0",
+  "embedding_and_shared_head": "Q8_0",
+  "norms": "F32",
+  "linear_tensor_counts": {"Q8_0": 21, "Q4_0": 105},
+  "model_bytes": 249766048,
+  "model_sha256": "ba91f3da5ca6c55dd5a6ebcf35f22fb22c2e3eaa486f33f6dc40460b34c0e43a",
+  "llama_cpp_tag": "b9010",
+  "llama_cpp_commit": "d05fe1d7dadbf8943c8f1903fcf65b935ddab839"
+}

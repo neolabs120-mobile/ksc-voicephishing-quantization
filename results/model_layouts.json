@@ -1,0 +1,130 @@
+{
+  "block_numbering": "zero_based",
+  "student_architecture": {
+    "transformer_blocks": 18,
+    "hidden_size": 640,
+    "vocabulary_size": 262144,
+    "tied_input_embedding_and_output_head": true
+  },
+  "distilled_f32": {
+    "bytes": 1078919328,
+    "sha256": "58b9d344459f722bb79b795790e4ceb3042639dfb8fa043d9ee3d0ad28e687fa",
+    "tensor_counts": {
+      "F32": 236
+    }
+  },
+  "original_f32": {
+    "bytes": 1078919712,
+    "sha256": "44a5a2efc22fa795d173fe52e39ee115c2feb9bc60ccf3eacfe73a76c0081f52",
+    "tensor_counts": {
+      "F32": 236
+    }
+  },
+  "final_mixed": {
+    "bytes": 249766048,
+    "sha256": "ba91f3da5ca6c55dd5a6ebcf35f22fb22c2e3eaa486f33f6dc40460b34c0e43a",
+    "q8_blocks": [
+      3,
+      5,
+      11
+    ],
+    "other_blocks": "Q4_0",
+    "shared_embedding_output": "Q8_0",
+    "other_floating_tensors": "F32",
+    "linear_matrix_counts": {
+      "Q8_0": 21,
+      "Q4_0": 105
+    },
+    "tensor_counts": {
+      "F32": 109,
+      "Q8_0": 22,
+      "Q4_0": 105
+    },
+    "source_id": "final_layout"
+  },
+  "uniform_transformer_blocks": {
+    "Q4_0": {
+      "bytes": 241410208,
+      "sha256": "5849a9f334a3366205a4067cfd71db3759e05f2273a6cf820a0f2931e9324414",
+      "linear_matrix_counts": {
+        "Q4_0": 126
+      },
+      "shared_embedding_output": "Q8_0",
+      "norms": "F32",
+      "source_id": "uniform"
+    },
+    "Q8_0": {
+      "bytes": 291545248,
+      "sha256": "e5362bd8de33de84a00aae8757651b05d3bd26d007eba96c98d7a78ca274e828",
+      "linear_matrix_counts": {
+        "Q8_0": 126
+      },
+      "shared_embedding_output": "Q8_0",
+      "norms": "F32",
+      "source_id": "uniform"
+    }
+  },
+  "teacher_deployment": {
+    "recipe_label": "Q3_K_S/E8",
+    "file_mb_rounded": 319.23,
+    "sha256": "ee01dd8910285e84f48e6824eafb6c3817fb079fdf1547284f141ed67477b138",
+    "block_linear_quantization": "Q3_K",
+    "linear_matrix_counts": {
+      "Q3_K": 168
+    },
+    "shared_embedding_output": "Q8_0",
+    "tensor_counts": {
+      "Q3_K": 168,
+      "Q8_0": 1,
+      "F32": 49
+    },
+    "architecture": {
+      "transformer_blocks": 24,
+      "hidden_size": 1024,
+      "vocabulary_size": 110592
+    },
+    "source_ids": [
+      "teacher_quantization_log",
+      "teacher_conversion",
+      "android_model_manifest"
+    ],
+    "f32_conversion": {
+      "bytes": 2269184544,
+      "sha256": "0e794810b8827ecfa283bcf2bc710266445129e95c0cd3a7c99e600fa335b9a4",
+      "excluded_training_only_tensors": [
+        "label_explanation_reconstruction_classifier.weight",
+        "label_explanation_reconstruction_classifier.bias"
+      ]
+    },
+    "reconstructed_equivalent_command": [
+      "llama-quantize",
+      "--token-embedding-type",
+      "q8_0",
+      "--output-tensor-type",
+      "q8_0",
+      "TEACHER_F32.gguf",
+      "TEACHER_Q3_K_E8.gguf",
+      "Q3_K_S",
+      "4"
+    ],
+    "command_note": "Equivalent command reconstructed from the logged subtype, thread count, and actual tensor types; original absolute paths are omitted.",
+    "bytes": 319226400,
+    "source_checkpoint": {
+      "bytes": 2265158224,
+      "sha256": "3dfcd61d4dd9cf5abc8d4839bf19ce26969f1d255219f72567cdb14c63beba61",
+      "source_ids": [
+        "teacher_model_sizes",
+        "android_model_manifest"
+      ]
+    }
+  },
+  "student_q3_excluded": {
+    "reason": "Q3_K recipe contains Q4_0 fallbacks and is not an all-3-bit Transformer baseline; excluded from final paper tables",
+    "linear_matrix_counts": {
+      "Q4_0": 90,
+      "Q3_K": 36
+    },
+    "fallback_count": 90,
+    "source_id": "uniform"
+  }
+}
